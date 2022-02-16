@@ -1,4 +1,4 @@
-# layer-painter
+# Layer Painter
 
 ## Introduction
 
@@ -60,6 +60,8 @@ After building, the installer will be in `./src-tauri/release/bundle`.
 
 I devlopped wasm part on Macbook Pro m1, and it worked well.
 
-However, `tauri` / `wry` is not surpport html `input` element to upload file yet. Here is the [issue](https://github.com/tauri-apps/wry/issues/305).
+However, on MacOS,  `tauri` / `wry` is not surpport html `input` element to upload file yet. Here is the [issue](https://github.com/tauri-apps/wry/issues/305).
 
 I didn't test on Linux, but I think it would work.
+
+### Thanks
