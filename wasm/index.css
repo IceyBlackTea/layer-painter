@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul::-webkit-scrollbar { 
+  display: none;
+}
+
+div::-webkit-scrollbar { 
+  display: none;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex  items-center
+    py-2 px-4 m-1 rounded
+    hover:cursor-pointer
+  }
+
+  .btn-blue {
+    @apply bg-sky-500 text-white
+    hover:bg-sky-600
+  }
+
+  .btn-disable {
+    @apply bg-gray-100 text-gray-600 font-bold
+    hover:cursor-not-allowed
+  }
+
+  .icon-btn {
+    @apply  items-center mx-4
+    hover:cursor-pointer
+  }
+
+  .icon-btn-grey {
+    @apply bg-gray-300 text-gray-800 font-bold
+    hover:bg-gray-400
+  }
+
+  .icon-svg {
+    @apply h-4 w-4 mr-0
+  }
+
+  .input-label {
+    @apply text-gray-700 text-sm font-bold select-none
+    mx-1
+    hover:cursor-default
+  }
+
+  .layer-name-div {
+    @apply h-10 flex items-center ml-6 w-48 overflow-x-scroll
+  }
+
+  .layer-name-label {
+    @apply text-gray-700 text-base font-bold mr-1 pb-1
+    hover:underline hover:underline-offset-1 hover:cursor-pointer
+  }
+
+  .layer-name-input {
+    @apply font-sans text-sm
+    py-2 px-3 mx-4 ring-1
+    w-40
+    ring-slate-900/10 text-slate-500 rounded-lg shadow-sm
+    focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500
+  }
+
+  .input-float {
+    @apply font-sans text-sm
+    py-2 px-2 ml-1 ring-1
+    w-10
+    ring-slate-900/10 text-slate-500 rounded-lg shadow-sm
+    focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500
+  }
+
+  .input-number {
+    @apply font-sans text-sm
+    py-2 px-3 m-4 ring-1 
+    w-20
+    ring-slate-900/10 text-slate-500 rounded-lg shadow-sm
+    focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500
+  }
+
+  .input-text {
+    @apply font-sans text-sm
+    py-2 px-3 mx-4 ring-1
+    w-48
+    ring-slate-900/10 text-slate-500 rounded-lg shadow-sm
+    focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500
+  }
+}
+
+
